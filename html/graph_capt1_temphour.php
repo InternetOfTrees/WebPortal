@@ -1,6 +1,6 @@
 
 <?php
- 	include "/var/www/connexion.php";
+ 	include "../connexion.php";
 ?>
 <!DOCTYPE html>
 <html>
