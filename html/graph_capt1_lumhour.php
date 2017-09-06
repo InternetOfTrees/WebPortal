@@ -19,7 +19,7 @@
 				var data_lum = new google.visualization.arrayToDataTable([
 				['Date', 'luminosity'],
 				<?php
-					$query = "SELECT id,timestamp,luminosity FROM mesures WHERE id IN (1)";
+					$query = "SELECT id,timestamp,luminosity FROM measures WHERE id IN (1)";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['timestamp']."',".$row['luminosity']."],";

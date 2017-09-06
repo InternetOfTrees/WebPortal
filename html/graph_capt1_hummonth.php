@@ -19,7 +19,7 @@
 				var data_hum = new google.visualization.arrayToDataTable([
 				['Date','moyd_hum'],
 				<?php
-					$query = "SELECT id,date, AVG(humidity) AS moyd_hum FROM mesures WHERE id IN (1) GROUP BY date";
+					$query = "SELECT id,date, AVG(humidity) AS moyd_hum FROM measures WHERE id IN (1) GROUP BY date";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['date']."',".$row['moyd_hum']."],";

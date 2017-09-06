@@ -20,7 +20,7 @@
 				var data_temp = new google.visualization.arrayToDataTable([
 				['Date','temperature'],
 				<?php
-					$query = "SELECT id,timestamp,temperature FROM mesures WHERE id IN (1)";
+					$query = "SELECT id,timestamp,temperature FROM measures WHERE id IN (1)";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['timestamp']."',".$row['temperature']."],";

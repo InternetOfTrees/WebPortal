@@ -19,7 +19,7 @@
 				var data_temp = new google.visualization.arrayToDataTable([
 				['Date','moyh_temp'],
 				<?php
-					$query = "SELECT id,date, HOUR(timestamp) as hours_day, AVG(temperature) AS moyh_temp FROM mesures WHERE id IN (1) GROUP BY  date, hours_day";
+					$query = "SELECT id,date, HOUR(timestamp) as hours_day, AVG(temperature) AS moyh_temp FROM measures WHERE id IN (1) GROUP BY  date, hours_day";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "[".$row['hours_day'].",".$row['moyh_temp']."],";

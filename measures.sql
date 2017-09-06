@@ -4,13 +4,13 @@
 -- ------------------------------------------------------
 
 --
--- Table structure for table `mesures`
+-- Table structure for table `measures`
 --
 
 DROP TABLE IF EXISTS `measures`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `mesures` (
+CREATE TABLE `measures` (
   `date` date NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `temperature` float DEFAULT NULL,

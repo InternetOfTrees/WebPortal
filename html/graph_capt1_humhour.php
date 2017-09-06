@@ -19,7 +19,7 @@
 				var data_hum = new google.visualization.arrayToDataTable([
 				['Date', 'humidity'],
 				<?php
-					$query = "SELECT id,timestamp,humidity FROM mesures WHERE id IN (1)";
+					$query = "SELECT id,timestamp,humidity FROM measures WHERE id IN (1)";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['timestamp']."',".$row['humidity']."],";
