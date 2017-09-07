@@ -19,7 +19,7 @@
 			var data_sap = new google.visualization.arrayToDataTable([
 				['Date','sapflow'],
 				<?php
-					$query = "SELECT id,timestamp,sapflow FROM mesures WHERE id IN (1)";
+					$query = "SELECT id,timestamp,sapflow FROM measures WHERE id IN (1)";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['timestamp']."',".$row['sapflow']."],";
