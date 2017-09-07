@@ -18,4 +18,5 @@ CREATE TABLE `measures` (
   `humidity` float DEFAULT NULL,
   `id` int(11) DEFAULT NULL,
   `battery_status` char(32) DEFAULT NULL
+  `sapflow` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
