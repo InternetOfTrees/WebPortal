@@ -1,3 +1,3 @@
 <?php
- $con = mysqli_connect('192.168.30.44','root','bresil','donnees');
+ $con = mysqli_connect('raspberrypi_ip','mysql_username','database_password','database_name');
 ?>
