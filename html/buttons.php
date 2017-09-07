@@ -8,7 +8,7 @@
         	<script>
             		$(document).ready(function(){
 				$("#batterycheck").click(function(){	//when you press the button
-					window.open("/battery_check.php");
+					window.open("/www/battery_check.php");
                 		});
 /**************************************************************************************************************************************************************************************/
 //											TEMPERATURE                                      						 //
