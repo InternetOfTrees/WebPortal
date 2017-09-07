@@ -19,7 +19,7 @@
 			var data_sap = new google.visualization.arrayToDataTable([
 				['Date', 'moyd_sap'],
 				<?php
-					$query = "SELECT id,date, AVG(sapflow) AS moyd_sap FROM mesures WHERE id IN (1) GROUP BY date";
+					$query = "SELECT id,date, AVG(sapflow) AS moyd_sap FROM measures WHERE id IN (1) GROUP BY date";
 					$exec = mysqli_query($con,$query);
 					while($row = mysqli_fetch_array($exec)){
 						echo "['".$row['date']."',".$row['moyd_sap']."],";
