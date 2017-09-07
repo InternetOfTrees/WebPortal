@@ -1,3 +1,4 @@
+//AUTHOR : OUMEIMA EL ISBIHANI
 <?php
         $con = mysqli_connect('host','mysql_user','mysql_password','databasename');
         $query = "SELECT timestamp, battery_status FROM measures WHERE (id IN (1)) AND (battery_status IS NOT NULL)";
