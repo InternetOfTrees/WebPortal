@@ -1,6 +1,6 @@
 <?php
-        $con = mysqli_connect('localhost','root','bresil','donnees');
-        $query = "SELECT timestamp, battery_status FROM mesures WHERE (id IN (1)) AND (battery_status IS NOT NULL)";
+        $con = mysqli_connect('host','mysql_user','mysql_password','databasename');
+        $query = "SELECT timestamp, battery_status FROM measures WHERE (id IN (1)) AND (battery_status IS NOT NULL)";
         $exec = mysqli_query($con,$query);
         $resultat = "";
 	$date = "";
